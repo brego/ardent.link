@@ -1,0 +1,24 @@
+// scss-lint:disable ColorVariable, ColorKeyword
+
+// 'Web-safe' font stacks
+$font-georgia:   Georgia, Times, 'Times New Roman', serif;
+$font-helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-lucida:    'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+$font-verdana:   Verdana, 'Bitstream Vera Sans', sans-serif;
+$font-monaco:    Monaco, Consolas, 'Courier New', Courier, 'Liberation Mono', monospace;
+
+$font-condensed-fallback: 'League Gothic', 'HelveticaNeue-CondensedBold', 'AvenirNextCondensed-Bold', 'Futura-CondensedExtraBold', 'Ubuntu Condensed', 'Liberation Sans Narrow', 'Franklin Gothic Demi Cond', 'Arial Narrow', sans-serif;
+
+// $font-cervo:       'Cervo', (#{$font-condensed-fallback});
+// $font-moris:       'Moris', (#{$font-helvetica});
+
+$breakpoints: (
+    'phone':        520px,
+    'tablet':       768px,
+    'desktop':      1024px
+);
+
+// $font-body:        $font-moris;
+// $font-headlines:   $font-cervo;
+
+// scss-lint:enable ColorVariable, ColorKeyword

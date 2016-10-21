@@ -1,0 +1,81 @@
+{
+    "name":        "ardent.link",
+    "description": "Code for Ardent Link ∞",
+    "author":      "Kamil Brego Dzielinski <kontakt@kamil.nu>",
+    "repository": {
+        "type": "git",
+        "url":  "https://github.com/brego/ardent.link"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "paths": {
+        "articles":  "articles/**/*.md",
+        "source": {
+            "base":       "src/",
+            "files":      "src/files/**/*",
+            "files_root": [
+                "src/files_root/**/*",
+                "src/files_root/**/.*",
+                "src/files_root/.**/*",
+                "src/files_root/.**/.*"
+            ],
+            "images": [
+                "src/images/**/*.jpg",
+                "src/images/**/*.png"
+            ],
+            "scripts":             "src/scripts/**/*.js",
+            "styles":              "src/styles/**/*.scss",
+            "templates":           "src/templates/**/*.mustache",
+            "templates_article":   "src/templates/article.mustache",
+            "templates_frontpage": "src/templates/frontpage.mustache"
+        },
+        "build": {
+            "base":    "public/",
+            "files":   "public/files/",
+            "images":  "public/images/",
+            "scripts": "public/scripts/",
+            "styles":  "public/styles/"
+        }
+    },
+    "localConfig": {
+        "autoprefixer": {
+            "browsers": [
+                "last 2 versions",
+                "> 1%",
+                "> 5% in DK",
+                "iOS >= 5",
+                "ie >= 9"
+            ],
+            "remove": false
+        }
+    },
+    "dependencies": {
+        "browser-sync":             "^2.17.5",
+        "del":                      "^2.2.2",
+        "glob":                     "^7.1.1",
+        "gulp-autoprefixer":        "^3.1.1",
+        "gulp-clean-css":           "^2.0.13",
+        "gulp-compile-handlebars":  "^0.6.1",
+        "gulp-concat":              "^2.6.0",
+        "gulp-load-plugins":        "^1.3.0",
+        "gulp-plumber":             "^1.1.0",
+        "gulp-rename":              "^1.2.2",
+        "gulp-rev-delete-original": "^0.2.2",
+        "gulp-rev-replace":         "^0.4.3",
+        "gulp-rev":                 "^7.1.2",
+        "gulp-sass":                "^2.3.2",
+        "gulp-sourcemaps":          "^2.1.1",
+        "gulp-uglify":              "^2.0.0",
+        "gulp-util":                "^3.0.7",
+        "gulp":                     "^3.9.1",
+        "highlight.js":             "^9.7.0",
+        "marked":                   "^0.3.6",
+        "mkdirp":                   "^0.5.1",
+        "moment":                   "^2.15.1",
+        "node-bourbon":             "^4.2.8",
+        "run-sequence":             "^1.2.2",
+        "through2":                 "^2.0.1",
+        "util-extend":              "^1.0.3",
+        "yaml-front-matter":        "^3.4.0"
+    }
+}

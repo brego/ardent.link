@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Ardent Link ∞</title>
+        <link rel="stylesheet" href="/styles/style.min.css">
+        <meta name="viewport"     content="width=device-width, initial-scale=1.0" />
+        <meta name="description"  content="Ardent Link - a blog by Kamil Brego Dzieliński">
+        <meta name="keywords"     content="Brego, Kamil, Dzieliński, jQuery, HTML, HTML5, CSS, CSS3, ROD, rodfolk.dk, FOLKAMOK!, folkamok.dk, KBH FOLK JAM, kbhfolkjam.dk, Folk-oplysningen, folk-oplysningen.dk, ROD2012, ROD2013, JavaScript, Photoshop, Design, PHP, MySQL, CakePHP, Folkemusik, Folk, Rottehullet, Rollespil, RPG, LARP, Live">
+        <meta name="author"       content="Kamil Brego Dzieliński">
+        <meta property="og:url"   content="http://ardent.link/">
+        <meta property="og:image" content="http://ardent.link/images/fb.png">
+        <script>document.documentElement.className="js"</script>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/ico" href="/favicon.ico">
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest"  href="/manifest.json">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff6347">
+        <meta name="apple-mobile-web-app-title" content="ardent.link">
+        <meta name="application-name" content="ardent.link">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <header class="site-header">
+            <a href="/" class="site-header-link">
+                <h1>
+                    <svg class="site-header-logo" width="100%" viewBox="0 0 1249 440" preserveAspectRatio="xMinYMin meet" version="1.1" aria-labelledby="site-logo-title site-logo-desc" role="img">
+                        <title id="site-logo-title">Ardent Link</title>
+                        <desc id="site-logo-desc">Logo of Ardent Link &mdash; image of a chain-link, folowed by words "Ardent Link"</desc>
+                        <path d="M635 384v56H483V236h67v148h85zM648 440V236h68v204h-68zM871 440l-80-104.2V440h-62V236h56.8L866 340.8V236h62v204h-57zM1028.9 369.9L1009 392v48h-67V236h67v70.7l61-70.7h77.7l-72.8 82.1L1152 440h-80.6l-42.5-70.1zM359 236.1c-63.1 0-107 39.9-107.4 100.9h-.1v.8c0 27.3-21.7 47.4-44.5 47.4-22.7 0-42.6-20.2-42.6-47.5s19.6-46.9 42.6-46.9c8.6 0 14.5.9 20.1 4.8 2 1.4 3.5 3.2 5.4 2.7 2.1-.6 2.1-2.5 3.1-5.2 5.3-14.7 13.4-27.8 23.9-38.9 1.8-1.8 3.1-2.4 2.8-5-.3-2.9-2.3-3.2-4.8-4.4-15.1-7.2-31-8.9-51.4-8.9-63.1.1-109.2 42.4-109.2 101.5 0 59.4 46 102.6 109.4 102.6 63.4 0 105.6-42.4 109.4-102.6v-.7c.5-26.8 21.4-45.9 44.2-45.9 22.7 0 40.9 19.6 40.9 46.9 0 27.3-18.2 47.4-40.9 47.4-8.5 0-14.3-.6-20.2-4.6-1.5-1-2.4-1.9-3.8-1.4-1.5.4-2 1.5-2.7 3.5-5.6 15.8-14.3 29.9-25.7 41.7-1.4 1.4-2.2 2-2 4 .2 1.9 1 2.1 2.6 2.9 15.2 7.3 30.7 8.8 50.9 8.8 63.4 0 109.4-43.4 109.4-102.5 0-58.9-46-101.4-109.4-101.4z"/>
+                        <path d="M79.7 175l-10.5 29H0L86.1 0h69.3l82.9 204h-71.9l-10.2-29H79.7zm39-107.7L97.2 127h42.5l-21-59.7zM343.2 151H318v53h-68V0h99c55.3 0 87 26.5 87 73 0 29.7-11.3 51.8-32.3 64.6l40.2 66.4h-76.2l-24.5-53zm5.8-51c14.5 0 23-9.2 23-24.9C372 60 363.6 51 349 51h-31v49h31zM547.1 0C614.3 0 658 39.9 658 101.9c0 62-44.5 102.1-113.5 102.1H456V0h91.1zM524 152h24.9c24.4 0 40.2-19.6 40.2-49.6 0-30.3-17.2-50.4-43.4-50.4H524v100zM736 51v25h53v51h-53v26h108v51H668V0h173v51H736zM997.5 204L917 99.8V204h-61V0h56.2L993 104.8V0h61v204h-56.5zM1191 53v151h-67V53h-58V0h183v53h-58z"/>
+                    </svg>
+                </h1>
+            </a>
+        </header>
+        <main class="site-main">
+            <ul class="articles">
+                {{#each articles}}
+                <li class="articles-item">
+                    <a href="{{{permalink}}}">
+                        <h2 class="article-title">{{title}}</h2>
+                        {{#if subtitle}}<p class="article-subtitle">{{subtitle}}</p>{{/if}}
+                        {{#if date}}<p class="article-date">Published on {{date_human}}</p>{{/if}}
+                        <!-- {{#if description}}<p class="article-description">{{{description}}}</p>{{/if}} -->
+                        <!-- <p><span class="article-more">Read more &raquo;</span></p> -->
+                        <p><span class="article-more">Read on &raquo;</span></p>
+                    </a>
+                </li>
+                {{/each}}
+            </ul>
+        </main>
+        <footer class="site-footer">
+            <p><a href="/about/">Made by Brego with coffee and love.</a></p>
+        </footer>
+        <script src="/scripts/all.min.js"></script>
+    </body>
+</html>

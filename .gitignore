@@ -1,0 +1,5 @@
+.sass-cache
+.gulp-scss-cache
+config.codekit
+public
+node_modules
